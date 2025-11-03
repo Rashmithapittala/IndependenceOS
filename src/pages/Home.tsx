@@ -109,24 +109,24 @@ export function Home() {
       role: "Founder",
       image: ravinderImg,
       calendlyUrl: "https://calendly.com/ravindersyal",
-      linkedinUrl: "https://linkedin.com/in/ravindersyal",
-      email: "ravinder@company.com",
+      linkedinUrl: "https://www.linkedin.com/in/ravinder-syal/",
+      email: "ravis@independenceos.ai",
     },
     {
       name: "Pulkit Tiwari",
       role: "Chief Technology Officer",
       image: pulkitImg,
       calendlyUrl: "https://calendly.com/pulkittiwari",
-      linkedinUrl: "https://linkedin.com/in/pulkittiwari",
-      email: "pulkit@company.com",
+      linkedinUrl: "https://www.linkedin.com/in/pulkit-tiwari/",
+      email: "pulkitt@independenceos.ai",
     },
     {
       name: "Rashmitha Pittala",
       role: "Forward Deployed Engineer",
       image: rashmithaImg,
       calendlyUrl: "https://calendly.com/rashmithapittala",
-      linkedinUrl: "https://linkedin.com/in/rashmithapittala",
-      email: "rashmitha@company.com",
+      linkedinUrl: "https://www.linkedin.com/in/rashmitha-pittala-50b4711b3/",
+      email: "rashmithap@independenceos.ai",
     },
   ];
 
@@ -178,25 +178,10 @@ export function Home() {
             </motion.p>
 
             <motion.div
-              className="flex flex-wrap items-center justify-center gap-4 mb-10"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-            >
-              <Button size="lg" className="group">
-                Learn More
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button size="lg" variant="outline">
-                Expert Results
-              </Button>
-            </motion.div>
-
-            <motion.div
               className="flex items-center justify-center gap-8"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
+              transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
             >
               <div className="flex items-center gap-2">
                 <CheckCircle className="h-5 w-5 text-primary" />
@@ -228,7 +213,7 @@ export function Home() {
       </section>
 
       {/* Platform Section - Palantir Inspired */}
-      <section className="py-32 px-4" style={{ background: 'linear-gradient(to bottom, rgba(248, 250, 251, 0.95), rgba(248, 250, 251, 0.98))' }}>
+      <section className="py-32 px-4" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-7xl">
           <div className="mb-20 text-center">
             <h1 className="mb-4 text-5xl">Our Platforms</h1>
@@ -277,7 +262,7 @@ export function Home() {
       </section>
 
       {/* Productivity Dashboard Section */}
-      <section className="py-20 px-4" style={{ background: 'linear-gradient(to bottom right, rgba(232, 244, 248, 0.3), rgba(219, 234, 254, 0.2))' }}>
+      <section className="py-20 px-4" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -316,7 +301,7 @@ export function Home() {
       </section>
 
       {/* Blog Section */}
-      <section className="py-20 px-4 bg-background">
+      <section className="py-20 px-4" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h1 className="mb-4 text-5xl">Insights & Innovation</h1>
@@ -356,7 +341,7 @@ export function Home() {
       </section>
 
       {/* Our Team Section */}
-      <section className="py-20 px-4" style={{ background: 'linear-gradient(to bottom right, rgba(232, 244, 248, 0.2), rgba(219, 234, 254, 0.15))' }}>
+      <section className="py-20 px-4" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <Badge className="mb-6 bg-primary/10 text-primary hover:bg-primary/20 border-primary/20">
@@ -411,7 +396,9 @@ export function Home() {
                         </a>
                         
                         <a
-                          href={`mailto:${member.email}`}
+                          href={`https://mail.google.com/mail/?view=cm&to=${member.email}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           onClick={(e) => e.stopPropagation()}
                           className="flex-1"
                         >
@@ -439,7 +426,7 @@ export function Home() {
       </section>
 
       {/* Job Listings Section */}
-      <section className="py-20 px-4 bg-background">
+      <section className="py-20 px-4" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="mb-4">Join the Team</h2>

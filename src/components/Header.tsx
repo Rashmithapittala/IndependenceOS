@@ -2,13 +2,34 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Menu, X, Activity } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-transparent bg-transparent shadow-none">
+    <header 
+      className={`sticky top-0 z-50 border-b transition-all duration-300 ${
+        isScrolled 
+          ? "shadow-sm" 
+          : "border-transparent shadow-none"
+      }`}
+      style={{
+        background: isScrolled ? 'rgba(248, 250, 251, 0.95)' : 'transparent',
+        backdropFilter: isScrolled ? 'blur(8px)' : 'none',
+        borderColor: isScrolled ? 'rgba(209, 213, 219, 0.5)' : 'transparent',
+      }}
+    >
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 group">

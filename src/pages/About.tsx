@@ -80,7 +80,9 @@ export function About() {
             alt="Healthcare technology background"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/10 to-secondary/15"></div>
+          {/* Overlay - stronger overlay to make image less visible and text more readable */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#F8FAFB]/85 via-[#F8FAFB]/80 to-[#F8FAFB]/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-white/40 to-white/30"></div>
         </div>
         <div className="absolute inset-0">
           <div className="absolute top-10 right-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl"></div>
