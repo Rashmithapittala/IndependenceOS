@@ -7,7 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: 'var(--background)',
+        background: {
+          DEFAULT: 'var(--background)',
+          '95': 'color-mix(in srgb, var(--background) 95%, transparent)',
+          '98': 'color-mix(in srgb, var(--background) 98%, transparent)',
+          '99': 'color-mix(in srgb, var(--background) 99%, transparent)',
+        },
         foreground: 'var(--foreground)',
         card: {
           DEFAULT: 'var(--card)',
@@ -23,7 +28,8 @@ export default {
         },
         secondary: {
           DEFAULT: 'var(--secondary)',
-          foreground: 'var(--secondary-foreground)',
+          '20': 'color-mix(in srgb, var(--secondary) 20%, transparent)',
+          '30': 'color-mix(in srgb, var(--secondary) 30%, transparent)',
         },
         muted: {
           DEFAULT: 'var(--muted)',
@@ -31,7 +37,9 @@ export default {
         },
         accent: {
           DEFAULT: 'var(--accent)',
-          foreground: 'var(--accent-foreground)',
+          '15': 'color-mix(in srgb, var(--accent) 15%, transparent)',
+          '20': 'color-mix(in srgb, var(--accent) 20%, transparent)',
+          '30': 'color-mix(in srgb, var(--accent) 30%, transparent)',
         },
         destructive: {
           DEFAULT: 'var(--destructive)',

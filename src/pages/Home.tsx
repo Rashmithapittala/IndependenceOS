@@ -141,9 +141,9 @@ export function Home() {
             alt="Healthcare AI - Medical professionals and AI technology working together"
             className="w-full h-full object-cover"
           />
-          {/* Overlay - stronger overlay to make image lighter and text more visible */}
-          <div className="absolute inset-0 bg-gradient-to-b from-background/98 via-background/95 to-background/99"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-white/50 to-white/40"></div>
+          {/* Overlay - lighter overlay to make image visible while keeping text readable */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#F8FAFB]/80 via-[#F8FAFB]/75 to-[#F8FAFB]/85"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-white/30 to-white/20"></div>
         </div>
 
         {/* Animated Content */}
@@ -228,7 +228,7 @@ export function Home() {
       </section>
 
       {/* Platform Section - Palantir Inspired */}
-      <section className="py-32 px-4 bg-gradient-to-b from-background/95 to-background/98">
+      <section className="py-32 px-4" style={{ background: 'linear-gradient(to bottom, rgba(248, 250, 251, 0.95), rgba(248, 250, 251, 0.98))' }}>
         <div className="container mx-auto max-w-7xl">
           <div className="mb-20 text-center">
             <h1 className="mb-4 text-5xl">Our Platforms</h1>
@@ -277,7 +277,7 @@ export function Home() {
       </section>
 
       {/* Productivity Dashboard Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-secondary/30 to-accent/20">
+      <section className="py-20 px-4" style={{ background: 'linear-gradient(to bottom right, rgba(232, 244, 248, 0.3), rgba(219, 234, 254, 0.2))' }}>
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -356,7 +356,7 @@ export function Home() {
       </section>
 
       {/* Our Team Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-secondary/20 to-accent/15">
+      <section className="py-20 px-4" style={{ background: 'linear-gradient(to bottom right, rgba(232, 244, 248, 0.2), rgba(219, 234, 254, 0.15))' }}>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <Badge className="mb-6 bg-primary/10 text-primary hover:bg-primary/20 border-primary/20">
