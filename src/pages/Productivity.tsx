@@ -99,13 +99,7 @@ export function Productivity() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-secondary/10 to-primary/10"></div>
-        <div className="absolute inset-0">
-          <div className="absolute top-20 left-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/30 rounded-full blur-3xl"></div>
-        </div>
-        
+      <section className="relative py-20 md:py-32 px-4 overflow-hidden" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-4xl relative text-center">
           <Badge className="mb-4 bg-primary text-white animate-pulse">Coming Soon</Badge>
           <h1 className="mb-6">Productivity Dashboard</h1>
@@ -120,7 +114,7 @@ export function Productivity() {
       </section>
 
       {/* Preview Section with Mock Dashboard */}
-      <section className="py-20 px-4 -mt-10">
+      <section className="py-20 px-4" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-6xl">
           <Card className="p-8 bg-gradient-to-br from-card to-secondary/30 shadow-2xl">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
@@ -146,7 +140,7 @@ export function Productivity() {
       </section>
 
       {/* Features Grid */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="mb-4">Powerful Features</h2>
@@ -178,7 +172,7 @@ export function Productivity() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-secondary/50 to-accent/30">
+      <section className="py-20 px-4" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -236,7 +230,7 @@ export function Productivity() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-4xl text-center">
           <Card className="p-12 bg-gradient-to-br from-primary to-primary/80 text-white">
             <h2 className="mb-4 text-white">Be the First to Know</h2>

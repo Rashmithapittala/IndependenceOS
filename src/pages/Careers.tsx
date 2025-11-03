@@ -84,13 +84,7 @@ export function Careers() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-accent via-secondary to-primary/10"></div>
-        <div className="absolute inset-0">
-          <div className="absolute top-20 left-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/30 rounded-full blur-3xl"></div>
-        </div>
-        
+      <section className="relative py-20 md:py-32 px-4 overflow-hidden" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-6xl relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -129,7 +123,7 @@ export function Careers() {
       </section>
 
       {/* Job Listings */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-5xl">
           <div className="flex flex-col md:flex-row md:items-center justify-between mb-12">
             <div>
@@ -182,7 +176,7 @@ export function Careers() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-secondary/30 to-accent/20">
+      <section className="py-20 px-4" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="mb-4">Benefits & Perks</h2>
@@ -206,7 +200,7 @@ export function Careers() {
       </section>
 
       {/* Voice Agent Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-secondary/30 to-accent/20">
+      <section className="py-20 px-4" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-8">
             <h2 className="mb-4">Apply via Voice</h2>
@@ -219,7 +213,7 @@ export function Careers() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-4xl text-center">
           <Card className="p-12 bg-gradient-to-br from-primary to-primary/80 text-white">
             <h2 className="mb-4 text-white">Don't See the Right Role?</h2>

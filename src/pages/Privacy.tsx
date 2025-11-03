@@ -33,12 +33,7 @@ export function Privacy() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-secondary via-accent/50 to-primary/10"></div>
-        <div className="absolute inset-0">
-          <div className="absolute top-10 right-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
-        </div>
-        
+      <section className="relative py-20 px-4 overflow-hidden" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-4xl relative text-center">
           <Badge className="mb-4 bg-primary/10 text-primary hover:bg-primary/20 border-primary/20">
             Legal
@@ -50,7 +45,7 @@ export function Privacy() {
       </section>
 
       {/* Overview */}
-      <section className="py-16 px-4 -mt-10">
+      <section className="py-16 px-4" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-4xl">
           <Card className="p-8 mb-12 bg-gradient-to-br from-card to-secondary/20 shadow-xl">
             <div className="flex gap-4 mb-6">

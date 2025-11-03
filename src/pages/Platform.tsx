@@ -67,13 +67,7 @@ export function Platform() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/10 to-secondary/15"></div>
-        <div className="absolute inset-0">
-          <div className="absolute top-10 right-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 left-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl"></div>
-        </div>
-        
+      <section className="relative py-20 md:py-32 px-4 overflow-hidden" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-6xl relative text-center">
           <Badge className="mb-4 bg-primary/10 text-primary hover:bg-primary/20 border-primary/20">
             Enterprise Platform
@@ -86,7 +80,7 @@ export function Platform() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-6xl">
           <div className="space-y-24">
             {features.map((feature, index) => {
@@ -136,7 +130,7 @@ export function Platform() {
       </section>
 
       {/* Technical Specs Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-secondary/30 to-accent/20">
+      <section className="py-20 px-4" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="mb-4">Built for Scale</h2>

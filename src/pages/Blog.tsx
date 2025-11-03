@@ -76,12 +76,7 @@ export function Blog() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-secondary via-accent/50 to-primary/10"></div>
-        <div className="absolute inset-0">
-          <div className="absolute top-10 right-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
-        </div>
-        
+      <section className="relative py-20 px-4 overflow-hidden" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-6xl relative">
           <div className="text-center mb-12">
             <Badge className="mb-4 bg-primary/10 text-primary hover:bg-primary/20 border-primary/20">
@@ -97,7 +92,7 @@ export function Blog() {
 
       {/* Featured Post */}
       {featuredPost && (
-        <section className="py-12 px-4 -mt-10">
+        <section className="py-12 px-4" style={{ backgroundColor: '#F8FAFB' }}>
           <div className="container mx-auto max-w-6xl">
             <Card className="overflow-hidden hover:shadow-2xl transition-all group cursor-pointer">
               <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -139,7 +134,7 @@ export function Blog() {
       )}
 
       {/* Categories */}
-      <section className="py-12 px-4 sticky top-16 z-40 bg-background/95 backdrop-blur-sm border-b border-border">
+      <section className="py-12 px-4 sticky top-16 z-40 border-b border-border" style={{ backgroundColor: 'rgba(248, 250, 251, 0.95)', backdropFilter: 'blur(8px)' }}>
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-wrap gap-2">
             {categories.map((category) => (
@@ -159,7 +154,7 @@ export function Blog() {
       </section>
 
       {/* Blog Posts Grid */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredPosts.map((post, index) => (
@@ -206,7 +201,7 @@ export function Blog() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-primary to-primary/80">
+      <section className="py-20 px-4" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-2xl text-center">
           <h2 className="mb-4 text-white">Subscribe to our Newsletter</h2>
           <p className="text-white/90 mb-8">Get the latest posts delivered right to your inbox.</p>
