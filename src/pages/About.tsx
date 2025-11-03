@@ -71,9 +71,9 @@ export function About() {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen" style={{ backgroundColor: '#F8FAFB' }}>
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 px-4 overflow-hidden">
+      <section className="relative py-20 md:py-32 px-4 overflow-hidden" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="absolute inset-0">
           <ImageWithFallback
             src="https://images.unsplash.com/photo-1758691462668-046fd85ceac9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwaGVhbHRoY2FyZSUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzYxNzEzMDgyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
@@ -98,7 +98,7 @@ export function About() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-8 px-4 mt-8">
+      <section className="py-8 px-4 mt-8" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-3xl">
           <div className="flex justify-center gap-4">
             <Card className="p-4 text-center bg-gradient-to-br from-primary to-primary/80 text-white hover:shadow-lg transition-all">
@@ -114,7 +114,7 @@ export function About() {
       </section>
 
       {/* Mission Section */}
-      <section className="py-12 px-4">
+      <section className="py-12 px-4" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
             <h2 className="mb-8 text-4xl">Our Mission</h2>
@@ -161,7 +161,7 @@ export function About() {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-secondary/30 to-accent/20">
+      <section className="py-20 px-4" style={{ backgroundColor: '#F8FAFB' }}>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="mb-4">Our Values</h2>

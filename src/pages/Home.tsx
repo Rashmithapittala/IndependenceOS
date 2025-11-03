@@ -131,7 +131,7 @@ export function Home() {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen" style={{ backgroundColor: '#F8FAFB' }}>
       {/* Hero Section */}
       <section className="relative h-screen min-h-[600px] overflow-hidden bg-transparent">
         {/* Background Image */}

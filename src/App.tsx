@@ -16,9 +16,9 @@ import { Privacy } from "./pages/Privacy";
 export default function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen" style={{ backgroundColor: '#F8FAFB' }}>
         <Header />
-        <main className="flex-1">
+        <main className="flex-1" style={{ backgroundColor: '#F8FAFB' }}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/platform" element={<Platform />} />

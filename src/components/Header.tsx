@@ -25,7 +25,7 @@ export function Header() {
           : "border-transparent shadow-none"
       }`}
       style={{
-        background: isScrolled ? 'rgba(248, 250, 251, 0.95)' : 'rgba(248, 250, 251, 0)',
+        background: isScrolled ? 'rgba(248, 250, 251, 0.95)' : 'transparent',
         backdropFilter: isScrolled ? 'blur(8px)' : 'none',
         borderColor: isScrolled ? 'rgba(209, 213, 219, 0.5)' : 'transparent',
       }}
