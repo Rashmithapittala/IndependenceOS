@@ -9,6 +9,7 @@ import { motion } from "motion/react";
 import ravinderImg from "figma:asset/7ae981ee052246e4de711cbd1bbce1628ae6e085.png";
 import pulkitImg from "figma:asset/ea31a049dea35c8dc009c8267a6de1c52d2a28d2.png";
 import rashmithaImg from "figma:asset/7e0fe239ca79bd444ed7432c065415e28992ba17.png";
+import healthcareAiHero from "../assets/healthcare-ai-hero.png";
 
 export function Home() {
   const platforms = [
@@ -136,13 +137,13 @@ export function Home() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <ImageWithFallback
-            src="https://images.unsplash.com/photo-1758691461888-b74515208d7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBob3NwaXRhbCUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzYxODAzMjY0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Healthcare Technology"
+            src={healthcareAiHero}
+            alt="Healthcare AI - Medical professionals and AI technology working together"
             className="w-full h-full object-cover"
           />
-          {/* Overlay - light overlay to make image lighter and text more visible */}
-          <div className="absolute inset-0 bg-gradient-to-b from-background/96 via-background/90 to-background/98"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-white/40 to-white/30"></div>
+          {/* Overlay - stronger overlay to make image lighter and text more visible */}
+          <div className="absolute inset-0 bg-gradient-to-b from-background/98 via-background/95 to-background/99"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-white/50 to-white/40"></div>
         </div>
 
         {/* Animated Content */}
@@ -168,7 +169,7 @@ export function Home() {
             </motion.h1>
 
             <motion.p
-              className="text-muted-foreground mb-10 max-w-3xl mx-auto text-lg md:text-xl"
+              className="text-foreground mb-10 max-w-3xl mx-auto text-lg md:text-xl font-medium"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
@@ -227,7 +228,7 @@ export function Home() {
       </section>
 
       {/* Platform Section - Palantir Inspired */}
-      <section className="py-32 px-4 bg-gradient-to-b from-background to-secondary/10">
+      <section className="py-32 px-4 bg-gradient-to-b from-background/95 to-background/98">
         <div className="container mx-auto max-w-7xl">
           <div className="mb-20 text-center">
             <h1 className="mb-4 text-5xl">Our Platforms</h1>
@@ -276,7 +277,7 @@ export function Home() {
       </section>
 
       {/* Productivity Dashboard Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-secondary/50 to-accent/30">
+      <section className="py-20 px-4 bg-gradient-to-br from-secondary/30 to-accent/20">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -315,7 +316,7 @@ export function Home() {
       </section>
 
       {/* Blog Section */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h1 className="mb-4 text-5xl">Insights & Innovation</h1>
@@ -355,7 +356,7 @@ export function Home() {
       </section>
 
       {/* Our Team Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-secondary/30 to-accent/20">
+      <section className="py-20 px-4 bg-gradient-to-br from-secondary/20 to-accent/15">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <Badge className="mb-6 bg-primary/10 text-primary hover:bg-primary/20 border-primary/20">
@@ -438,7 +439,7 @@ export function Home() {
       </section>
 
       {/* Job Listings Section */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="mb-4">Join the Team</h2>
